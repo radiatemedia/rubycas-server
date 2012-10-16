@@ -32,9 +32,12 @@ module CASServer::Model
   end
 
   class Base < ActiveRecord::Base
+    self.abstract_class = true if ActiveRecord::VERSION::STRING >= '3.2'
   end
 
   class Ticket < Base
+    self.abstract_class = true if ActiveRecord::VERSION::STRING >= '3.2'
+
     def to_s
       ticket
     end
@@ -53,12 +56,12 @@ module CASServer::Model
   end
 
   class LoginTicket < Ticket
-    set_table_name 'casserver_lt'
+    self.table_name = 'casserver_lt'
     include Consumable
   end
 
   class ServiceTicket < Ticket
-    set_table_name 'casserver_st'
+    self.table_name = 'casserver_st'
     include Consumable
 
     belongs_to :granted_by_tgt,

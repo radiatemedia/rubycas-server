@@ -27,6 +27,7 @@ module CASServer
     set :app_file, __FILE__
     set( use_public_folder? ? :public_folder : :public, # Workaround for differences in Sinatra versions.
          Proc.new { settings.config[:public_dir] || File.join(root, "..", "..", "public") } )
+    set :protection, :except => :frame_options #prevent iframe blocking
 
     config = HashWithIndifferentAccess.new(
       :maximum_unused_login_ticket_lifetime => 5.minutes,
