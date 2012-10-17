@@ -570,7 +570,7 @@ module CASServer
       if @gateway && @service
         redirect @service, 303
       elsif @continue_url
-        render @template_engine, :logout
+        redirect @continue_url, 303
       else
         render @template_engine, :login
       end
