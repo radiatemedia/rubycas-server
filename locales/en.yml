@@ -20,6 +20,7 @@ notice:
 label:
   username: "Username"
   password: "Password"
+  domain: "Website"
   central_login_title: "Central Login"
 
 button:
