@@ -20,6 +20,7 @@ notice:
 label:
   username: "Usuario"
   password: "Contraseña"
+  domain: "Sitio Web"
   central_login_title: "Servicio de Autenticación Central"
 
 button:

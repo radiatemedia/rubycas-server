@@ -20,6 +20,7 @@ notice:
 label:
   username: "帳號"
   password: "密碼"
+  domain: "域名"
   central_login_title: "整合登入"
 
 button:

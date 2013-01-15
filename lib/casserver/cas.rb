@@ -75,6 +75,7 @@ module CASServer::CAS
     uri = URI.parse(pgt_url)
     https = Net::HTTP.new(uri.host,uri.port)
     https.use_ssl = true
+    https.verify_mode = OpenSSL::SSL::VERIFY_NONE if ENV['RACK_ENV'] != 'production'
 
     # Here's what's going on here:
     #
