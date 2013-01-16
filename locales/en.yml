@@ -21,6 +21,8 @@ label:
   username: "Username"
   password: "Password"
   domain: "Website"
+  email: "Email address"
+  or_username: "or username"
   central_login_title: "Central Login"
 
 button:

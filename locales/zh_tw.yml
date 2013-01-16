@@ -21,6 +21,8 @@ label:
   username: "帳號"
   password: "密碼"
   domain: "域名"
+  email: "電子郵件"
+  or_username: "或會員帳號"
   central_login_title: "整合登入"
 
 button:

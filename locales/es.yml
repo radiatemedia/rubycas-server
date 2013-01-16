@@ -21,6 +21,8 @@ label:
   username: "Usuario"
   password: "Contraseña"
   domain: "Sitio Web"
+  email: "Email"
+  or_username: "o nombre de usario"
   central_login_title: "Servicio de Autenticación Central"
 
 button:

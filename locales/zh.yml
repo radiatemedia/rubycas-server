@@ -20,6 +20,9 @@ notice:
 label:
   username: "用户名"
   password: "密码"
+  domain: "域名"
+  email: "電子郵件"
+  or_username: "或會員帳號"
   central_login_title: "整合登录"
 
 button:
